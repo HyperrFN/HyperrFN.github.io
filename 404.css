@@ -1,0 +1,124 @@
+/* Переменные для Цветовой Палитры (Темный режим) */
+:root {
+  --color-background: #222222; /* Темно-серый фон */
+  --color-text-main: #ffffff; /* Белый текст */
+  --color-text-secondary: #aaaaaa; /* Светло-серый для второстепенного текста */
+  --color-accent: #666666; /* Средний серый для акцентов/кнопок */
+  --color-accent-hover: #777777; /* Более светлый серый для эффекта наведения */
+}
+
+/* Общие стили и сброс */
+body {
+  font-family: "Open Sans", sans-serif;
+  background-image: url(https://fv5-4.files.fm/thumb_show.php?i=g7udwtd379&view&v=1&PHPSESSID=706f38afcac320e780702ef0d81d9dc5fae869eb);
+  color: var(--color-text-main); /* Основной текст - белый */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 600px;
+  padding: 40px 20px;
+}
+
+/* Код ошибки (самый крупный элемент) */
+.error-code {
+  font-size: 170px;
+  font-weight: 700;
+  margin: 0;
+  color: #898787;
+  line-height: 1;
+}
+
+/* Заголовок */
+.error-title {
+  font-size: 32px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: var(--color-text-main);
+}
+
+/* Сообщение */
+.error-message {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: var(--color-text-secondary); /* Светло-серый */
+}
+
+/* Секция действий (кнопок) */
+.actions {
+  margin-bottom: 40px;
+}
+
+/* Стиль основной кнопки (Primary) */
+.button {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 0 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+/* Кнопка на темном фоне должна быть светлее для видимости */
+.button.primary {
+  background-color: var(--color-accent); /* Средний серый фон */
+  color: var(--color-text-main); /* Белый текст */
+  border: none; /* Убираем стандартный бордер */
+
+  /* Добавляем переход для плавной анимации */
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+
+  /* Небольшая тень, чтобы кнопка выглядела немного приподнятой изначально */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Эффект при наведении (Hover) */
+.button.primary:hover {
+  /* 1. Всплытие: сдвиг вверх на 3 пикселя */
+  transform: translateY(-3px);
+
+  /* 2. Белая обводка: добавляем внутреннюю белую тень, которая выглядит как обводка */
+  /* 0 0 0 2px rgba(255, 255, 255, 1) - смещение X, смещение Y, размытие, толщина, цвет */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5), 0 0 0 2px var(--color-text-main); /* Белая обводка */
+
+  /* Чуть-чуть осветлим фон кнопки при наведении */
+  background-color: var(--color-accent-hover);
+}
+
+/* Контактная информация */
+.contact-info {
+  font-size: 14px;
+  color: var(--color-text-secondary);
+}
+
+.contact-info a {
+  color: var(--color-accent); /* Ссылка тоже акцентного цвета */
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Адаптивность для небольших экранов */
+@media (max-width: 500px) {
+  .error-code {
+    font-size: 90px;
+  }
+
+  .error-title {
+    font-size: 24px;
+  }
+
+  .button {
+    display: block;
+    margin: 10px 0;
+  }
+}

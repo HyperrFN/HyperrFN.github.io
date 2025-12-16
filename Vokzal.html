@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путеводитель по городу Молодечно</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://fv5-3.files.fm/thumb_show.php?i=qvy3tuu77b&view&v=1&PHPSESSID=706f38afcac320e780702ef0d81d9dc5fae869eb"
+    />
+    <style>
+      /* Стили для фото-секции */
+      .photos-section {
+        padding: 60px 20px;
+        background-color: #f5f7fa;
+        transition: background-color 0.3s ease;
+      }
+
+      .photos-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .photos-title {
+        text-align: center;
+        font-size: 2.2rem;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+
+      .photos-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+
+      .photo-item {
+        flex: 1;
+        min-width: 300px;
+        max-width: 550px;
+      }
+
+      .photo-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .photo-image:hover {
+        transform: scale(1.02);
+      }
+
+      /* Текст под фотографиями */
+      .text-below {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .text-below-title {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .text-below-content {
+        color: #5d6d7e;
+        line-height: 1.7;
+        font-size: 1.1rem;
+        text-align: justify;
+      }
+
+      .text-below-content p {
+        margin-bottom: 20px;
+      }
+
+      .text-below-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Стили для темной темы */
+      .dark-mode .photos-section {
+        background-color: #373737;
+      }
+
+      .dark-mode .photos-title {
+        color: #ecf0f1;
+      }
+
+      .dark-mode .photo-image {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .dark-mode .text-below {
+        background-color: #3d3d3d;
+      }
+
+      .dark-mode .text-below-title {
+        color: #ecf0f1;
+      }
+
+      .dark-mode .text-below-content {
+        color: #bdc3c7;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-logo">
+          <span class="logo-text"
+            ><img src="" alt="" /><i class="fa-solid fa-tree-city"></i
+          ></span>
+        </div>
+        <nav class="header-nav">
+          <a href="main.html" class="nav-button"
+            ><i class="fa-solid fa-house"></i> Главная</a
+          >
+          <a href="tour.html" class="nav-button"
+            ><i class="fa-solid fa-map-location-dot"></i> Заказать тур</a
+          >
+          <a href="404.html" class="nav-button"
+            ><i class="fa-solid fa-bars"></i> Расширенное</a
+          >
+          <i
+            id="night"
+            class="fa-solid fa-moon fa-2xl"
+            style="color: #303031"
+          ></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Секция с фотографиями -->
+    <section class="photos-section">
+      <div class="photos-container">
+        <h2 class="photos-title">Железнодорожный вокзал</h2>
+
+        <div class="photos-row">
+          <!-- Первая фотография -->
+          <div class="photo-item">
+            <iframe
+              width="560"
+              height="349"
+              src="https://www.youtube.com/embed/iHvBpY8oXg4?si=zvvEtHsw1A7CL2QQ"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <!-- Вторая фотография -->
+          <div class="photo-item">
+            <img
+              src="https://minoblturism.gov.by/upload/iblock/512/51241b2d712c841421cfd9b61f12b0e2.jpg"
+              alt="Река Уша в Молодечно"
+              class="photo-image"
+            />
+          </div>
+        </div>
+
+        <!-- Текст под фотографиями -->
+        <div class="text-below">
+          <div class="text-below-content">
+            <h2>Железнодорожный вокзал Молодечно</h2>
+            <p>
+              <em
+                >Исторический памятник, архитектурная жемчужина и главные ворота
+                города.</em
+              >
+            </p>
+
+            <h3>Краткая история</h3>
+            <p>
+              Движение поездов началось в <strong>1873 году</strong>.
+              Современное здание в стиле модерн было построено в
+              <strong>1907 году</strong>. После разрушений войны вокзал был
+              восстановлен к 1947 году и с тех пор неоднократно
+              модернизировался.
+            </p>
+
+            <h3>Архитектура</h3>
+            <p>
+              Здание является образцом архитектуры модерн: плавные линии,
+              полукруглые окна, криволинейные щиты на фасаде и богатый декор.
+            </p>
+
+            <h3>Что посмотреть и удобства</h3>
+            <ul>
+              <li>
+                <strong>Скульптура «Пассажирка»</strong> на Привокзальной
+                площади — популярный объект для фото.
+              </li>
+              <li>Зал ожидания, буфет, банкомат, камеры хранения, медпункт.</li>
+              <li>Бесплатный Wi-Fi, электронные табло и терминалы.</li>
+              <li>
+                Оборудован для маломобильных путешественников (лифты, пандусы).
+              </li>
+              <li>
+                Памятный стенд героям Великой Отечественной войны в зале
+                ожидания.
+              </li>
+            </ul>
+
+            <h3>Направления движения</h3>
+            <p>
+              Крупный железнодорожный узел. Поезда следуют в четырех основных
+              направлениях:
+            </p>
+            <ul>
+              <li><strong>Минск</strong></li>
+              <li><strong>Гродно</strong></li>
+              <li><strong>Вильнюс</strong></li>
+              <li><strong>Полоцк</strong></li>
+            </ul>
+            <p>
+              Доступны поезда региональных линий, дальнего следования и
+              международные рейсы.
+            </p>
+
+            <div
+              style="
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-left: 4px solid #3498db;
+                margin: 20px 0;
+                color: #2c3e50;
+              "
+            >
+              <p>
+                <strong>Совет туристам:</strong> Даже если вы не планируете
+                поездку, загляните на вокзал, чтобы оценить его архитектуру,
+                сфотографироваться со скульптурой «Пассажирка» и почувствовать
+                атмосферу старинного транспортного узла.
+              </p>
+            </div>
+
+            <p>
+              <strong>Адрес:</strong> г. Молодечно, ул. Вокзальная, 1.<br />
+              <strong>Режим работы:</strong> круглосуточно.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <h2>Контакты</h2>
+          <a href="https://t.me/hyperr_fn"
+            ><i class="fa-brands fa-telegram fa-2xl" style="color: #303030"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/hyperr_fn_?igsh=ZjhlenoxcHJzeGRn&utm_source=qr"
+            ><i class="fa-brands fa-instagram fa-2xl" style="color: #3d3d3d"></i
+          ></a>
+        </div>
+        <div class="footer-content-right">
+          <p>&copy; 2025 "Люблю ВТвИн". Все права защищены.</p>
+          <br />
+          <div id="donat">
+            Помочь сайту:<br />
+            4255 1901 5391 6393
+          </div>
+        </div>
+      </div>
+      <script>
+        const nightButton = document.getElementById("night");
+        const body = document.body;
+        const icon = nightButton.querySelector("i");
+
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+          body.classList.add("dark-mode");
+          nightButton.style.color = "#f1c40f"; // Золотая/желтая луна в темном режиме
+        } else {
+          // Убедимся, что начальный цвет для светлого режима установлен
+          nightButton.style.color = "#303031";
+        }
+
+        nightButton.addEventListener("click", () => {
+          // Переключаем класс 'dark-mode' на <body>
+          body.classList.toggle("dark-mode");
+
+          if (body.classList.contains("dark-mode")) {
+            // Сохраняем выбор и меняем цвет иконки
+            localStorage.setItem("theme", "dark");
+            nightButton.style.color = "#f1c40f";
+          } else {
+            // Сохраняем выбор и меняем цвет иконки
+            localStorage.setItem("theme", "light");
+            nightButton.style.color = "#303031";
+          }
+        });
+      </script>
+    </footer>
+  </body>
+</html>

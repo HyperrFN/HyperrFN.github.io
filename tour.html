@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Форма для заказа индивидуального туристического тура по городу Молодечно."
+    />
+    <meta
+      name="keywords"
+      content="Заказать тур, Молодечно, турист, Форма заказа, Индивидуальный тур"
+    />
+    <title>Заказать тур по Молодечно</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://fv5-3.files.fm/thumb_show.php?i=qvy3tuu77b&view&v=1&PHPSESSID=706f38afcac320e780702ef0d81d9dc5fae869eb"
+    />
+    <style>
+      .form-section {
+        min-height: 80vh; /* Минимальная высота, чтобы форма была по центру */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 20px;
+      }
+
+      .form-wrapper {
+        padding: 0;
+        justify-content: center;
+      }
+
+      .tour-request-form {
+        max-width: 500px;
+        width: 100%;
+        background-color: #1e1e1e; /* Основной цвет формы */
+        border-radius: 15px;
+        padding: 0;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        color: white;
+      }
+
+      .form-header {
+        background-color: #315a40;
+        padding: 25px 30px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        text-align: center;
+        color: #f7f3f3;
+      }
+
+      .form-header h2 {
+        color: #cbc8c8;
+        margin: 10px 0 0 0;
+        text-shadow: none;
+        font-size: 1.8em;
+      }
+
+      .form-header i {
+        color: #c4c2c2;
+      }
+
+      .input-group {
+        padding: 10px 30px;
+        margin-bottom: 5px;
+      }
+
+      .input-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 0.9em;
+        color: #ccc;
+      }
+
+      .input-field {
+        display: flex;
+        align-items: center;
+        background-color: #2a2a2a; /* Цвет поля ввода */
+        border-radius: 8px;
+        padding: 10px 15px;
+        transition: border 0.3s;
+        border: 1px solid transparent;
+      }
+
+      .input-field:focus-within {
+        border: 1px solid #797673; /* Подсветка при фокусе */
+      }
+
+      .input-field i {
+        color: #ccc;
+        margin-right: 10px;
+      }
+
+      .input-field input {
+        flex-grow: 1;
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        font-size: 1em;
+        padding: 0;
+      }
+
+      .input-field input::placeholder {
+        color: #777;
+      }
+
+      .send-button {
+        width: calc(100% - 60px);
+        margin: 20px 30px 30px 30px;
+        padding: 15px 0;
+        background-color: #315a40;
+        color: #f6f4f4;
+        font-size: 1.1em;
+        font-weight: bold;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.2s;
+      }
+
+      .send-button:hover {
+        background-color: #195116;
+        transform: translateY(-2px);
+      }
+
+      .send-button i {
+        margin-left: 10px;
+      }
+
+      /* Медиа-запросы для формы */
+      @media (max-width: 480px) {
+        .tour-request-form {
+          border-radius: 0;
+        }
+        .form-header {
+          border-radius: 0;
+        }
+        .input-group {
+          padding: 10px 20px;
+        }
+        .send-button {
+          width: calc(100% - 40px);
+          margin: 20px 20px 30px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-logo">
+          <span class="logo-text"
+            ><img src="" alt="" /><i class="fa-solid fa-tree-city"></i
+          ></span>
+        </div>
+        <nav class="header-nav">
+          <a href="main.html" class="nav-button"
+            ><i class="fa-solid fa-house"></i> Главная</a
+          >
+          <a href="404.html" class="nav-button"
+            ><i class="fa-solid fa-bars"></i> Расширенное</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="content-section form-section">
+        <div class="content-wrapper form-wrapper">
+          <form
+            action="https://formsubmit.co/alexkazhuro2007@gmail.com"
+            class="tour-request-form"
+          >
+            <div class="form-header">
+              <i class="fa-solid fa-plane-departure fa-xl"></i>
+              <h2>Заявка на тур</h2>
+            </div>
+
+            <div class="input-group">
+              <label for="name">Ваше имя</label>
+              <div class="input-field">
+                <i class="fa-solid fa-user"></i>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Введите ваше имя"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Email адрес</label>
+              <div class="input-field">
+                <i class="fa-solid fa-envelope"></i>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="_______@gmail.com"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="phone">Номер телефона</label>
+              <div class="input-field">
+                <i class="fa-solid fa-phone"></i>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="+375 (XX) XXX-XX-XX"
+                />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <label for="dates">Желаемые даты тура</label>
+              <div class="input-field">
+                <i class="fa-solid fa-calendar-alt"></i>
+                <input
+                  type="text"
+                  id="dates"
+                  name="dates"
+                  required
+                  placeholder="Актуальные туры у нас в Telegram"
+                />
+              </div>
+            </div>
+
+            <button type="submit" class="send-button">
+              Отправить заявку <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <h2>Контакты</h2>
+          <a class="insta" href="https://t.me/hyperr_fn"
+            ><i class="fa-brands fa-telegram fa-2xl" style="color: #2a2a2a"></i
+          ></a>
+          <a
+            class="insta"
+            href="https://www.instagram.com/hyperr_fn_?igsh=ZjhlenoxcHJzeGRn&utm_source=qr"
+            ><i class="fa-brands fa-instagram fa-2xl" style="color: #2a2a2a"></i
+          ></a>
+        </div>
+        <div class="footer-content-right">
+          <p>&copy; 2025 "Люблю ВТвИн". Все права защищены.</p>
+          <br />
+          <div id="donat">
+            Помочь сайту:<br />
+            4255 1901 5391 6393
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

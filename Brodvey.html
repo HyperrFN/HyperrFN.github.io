@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Путеводитель по городу Молодечно</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://fv5-3.files.fm/thumb_show.php?i=qvy3tuu77b&view&v=1&PHPSESSID=706f38afcac320e780702ef0d81d9dc5fae869eb"
+    />
+    <style>
+      /* Стили для фото-секции */
+      .photos-section {
+        padding: 60px 20px;
+        background-color: #f5f7fa;
+        transition: background-color 0.3s ease;
+      }
+
+      .photos-container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .photos-title {
+        text-align: center;
+        font-size: 2.2rem;
+        color: #2c3e50;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+
+      .photos-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+
+      .photo-item {
+        flex: 1;
+        min-width: 300px;
+        max-width: 550px;
+      }
+
+      .photo-image {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        display: block;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+      }
+
+      .photo-image:hover {
+        transform: scale(1.02);
+      }
+
+      /* Текст под фотографиями */
+      .text-below {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: white;
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      }
+
+      .text-below-title {
+        font-size: 1.8rem;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .text-below-content {
+        color: #5d6d7e;
+        line-height: 1.7;
+        font-size: 1.1rem;
+        text-align: justify;
+      }
+
+      .text-below-content p {
+        margin-bottom: 20px;
+      }
+
+      .text-below-content p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* Стили для темной темы */
+      .dark-mode .photos-section {
+        background-color: #373737;
+      }
+
+      .dark-mode .photos-title {
+        color: #ecf0f1;
+      }
+
+      .dark-mode .photo-image {
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+      }
+
+      .dark-mode .text-below {
+        background-color: #3d3d3d;
+      }
+
+      .dark-mode .text-below-title {
+        color: #ecf0f1;
+      }
+
+      .dark-mode .text-below-content {
+        color: #bdc3c7;
+      }
+
+      /* Адаптивность */
+      @media (max-width: 768px) {
+        .photos-row {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .photo-item {
+          width: 100%;
+          max-width: 100%;
+        }
+
+        .photo-image {
+          height: 250px;
+        }
+
+        .photos-title {
+          font-size: 1.8rem;
+        }
+
+        .text-below {
+          padding: 25px;
+        }
+
+        .text-below-title {
+          font-size: 1.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-content">
+        <div class="header-logo">
+          <span class="logo-text"
+            ><img src="" alt="" /><i class="fa-solid fa-tree-city"></i
+          ></span>
+        </div>
+        <nav class="header-nav">
+          <a href="main.html" class="nav-button"
+            ><i class="fa-solid fa-house"></i> Главная</a
+          >
+          <a href="tour.html" class="nav-button"
+            ><i class="fa-solid fa-map-location-dot"></i> Заказать тур</a
+          >
+          <a href="404.html" class="nav-button"
+            ><i class="fa-solid fa-bars"></i> Расширенное</a
+          >
+          <i
+            id="night"
+            class="fa-solid fa-moon fa-2xl"
+            style="color: #303031"
+          ></i>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Секция с фотографиями -->
+    <section class="photos-section">
+      <div class="photos-container">
+        <h2 class="photos-title">Бродвей</h2>
+
+        <div class="photos-row">
+          <!-- Первая фотография -->
+          <div class="photo-item">
+            <img
+              src="https://fv5-5.files.fm/thumb_show.php?i=xe2zdv7jqw&view&v=1&PHPSESSID=706f38afcac320e780702ef0d81d9dc5fae869eb"
+              alt="Центральная площадь Молодечно"
+              class="photo-image"
+            />
+          </div>
+
+          <!-- Вторая фотография -->
+          <div class="photo-item">
+            <iframe
+              width="560"
+              height="349"
+              src="https://www.youtube.com/embed/9aZdvCH6Q1s?si=89r_0TpzVX5sfXD-"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Текст под фотографиями -->
+        <div class="text-below">
+          <div class="text-below-content">
+            <h2>Улица Притыцкого — «Бродвей» Молодечно</h2>
+            <p>
+              <em
+                >Главная пешеходная артерия и самое оживлённое место для
+                прогулок, шопинга и отдыха в городе.</em
+              >
+            </p>
+
+            <h3>История и название</h3>
+            <p>
+              Улица была проложена в <strong>1950-х годах</strong> и
+              первоначально носила название Революционной. В
+              <strong>1971 году</strong>, после смерти видного политического
+              деятеля БССР, её переименовали в честь
+              <strong>Сергея Притыцкого</strong>. Пешеходной она стала не сразу:
+              в 1988 году закрыли движение на участке до улицы Волынца, а с
+              <strong>2011 года</strong> вся улица полностью стала пешеходной.
+            </p>
+
+            <h3>Описание и атмосфера</h3>
+            <p>
+              Это популярнейшее место для променада у горожан и туристов.
+              Протяжённость пешеходной зоны составляет около
+              <strong>700 метров</strong>. Она соединяет Центральную площадь с
+              железнодорожным вокзалом, образуя удобный маршрут. Туристы часто
+              отмечают, что улица напоминает уютную <strong>аллею</strong>.
+              Здесь царит особая атмосфера: по вечерам в хорошую погоду сюда
+              выходит гулять молодёжь, семьи и гости города.
+            </p>
+
+            <h3>Инфраструктура и достопримечательности</h3>
+            <p>На «Бродвее» есть всё для комфортного отдыха:</p>
+            <ul>
+              <li><strong>Магазины и киоски</strong> для шопинга.</li>
+              <li><strong>Кафе</strong> и другие заведения питания.</li>
+              <li>Кинотеатр, отделение банка и почты.</li>
+              <li>Костел (храм на улице придаёт особый колорит).</li>
+              <li>
+                Уличные часы, которые местные жители в шутку называют
+                <strong>«местным Биг-Беном»</strong>.
+              </li>
+            </ul>
+            <p>
+              Улица является главной площадкой для проведения городских
+              <strong>культурных мероприятий</strong>, праздников и фестивалей.
+            </p>
+
+            <div
+              style="
+                background-color: #f5f5f5;
+                padding: 15px;
+                border-left: 4px solid #3498db;
+                margin: 20px 0;
+                color: #2c3e50;
+              "
+            >
+              <p>
+                <strong>Совет туристам:</strong> Обязательно включите прогулку
+                по «Бродвею» в свой маршрут. Лучшее время для визита — вечер,
+                когда включается освещение и чувствуется настоящая городская
+                жизнь. Здесь можно купить сувениры, выпить кофе, посмотреть на
+                людей и стать частью ритма Молодечно. Это идеальное место, чтобы
+                сделать памятные фотографии.
+              </p>
+            </div>
+
+            <p>
+              <strong>Местоположение:</strong> Центр города. Начинается от
+              Центральной площади и тянется до железнодорожного вокзала.<br />
+              <strong>Протяжённость пешеходной части:</strong> ~700 метров.<br />
+              <strong>Статус:</strong> Полностью пешеходная с 2011 года.
+            </p>
+            <p>
+              <em
+                >Информация основана на материалах издания «Маладзечанская
+                газета» (22.09.2022) и портала «Планета Беларусь».</em
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <h2>Контакты</h2>
+          <a href="https://t.me/hyperr_fn"
+            ><i class="fa-brands fa-telegram fa-2xl" style="color: #303030"></i
+          ></a>
+          <a
+            href="https://www.instagram.com/hyperr_fn_?igsh=ZjhlenoxcHJzeGRn&utm_source=qr"
+            ><i class="fa-brands fa-instagram fa-2xl" style="color: #3d3d3d"></i
+          ></a>
+        </div>
+        <div class="footer-content-right">
+          <p>&copy; 2025 "Люблю ВТвИн". Все права защищены.</p>
+          <br />
+          <div id="donat">
+            Помочь сайту:<br />
+            4255 1901 5391 6393
+          </div>
+        </div>
+      </div>
+      <script>
+        const nightButton = document.getElementById("night");
+        const body = document.body;
+        const icon = nightButton.querySelector("i");
+
+        const savedTheme = localStorage.getItem("theme");
+
+        if (savedTheme === "dark") {
+          body.classList.add("dark-mode");
+          nightButton.style.color = "#f1c40f"; // Золотая/желтая луна в темном режиме
+        } else {
+          // Убедимся, что начальный цвет для светлого режима установлен
+          nightButton.style.color = "#303031";
+        }
+
+        nightButton.addEventListener("click", () => {
+          // Переключаем класс 'dark-mode' на <body>
+          body.classList.toggle("dark-mode");
+
+          if (body.classList.contains("dark-mode")) {
+            // Сохраняем выбор и меняем цвет иконки
+            localStorage.setItem("theme", "dark");
+            nightButton.style.color = "#f1c40f";
+          } else {
+            // Сохраняем выбор и меняем цвет иконки
+            localStorage.setItem("theme", "light");
+            nightButton.style.color = "#303031";
+          }
+        });
+      </script>
+    </footer>
+  </body>
+</html>
